@@ -1,0 +1,14 @@
+<h1>Total Word Count Program</h1>
+
+<h1> Your Text: </h1>
+{{ fulltext }}
+<h1> Total number of words: {{counttotal}} </h1>
+
+
+<h1> Word Count Frequency: </h1>
+
+{% for wordfreq, counttot in sortedwords %}
+
+{{ wordfreq }} - {{counttot}}
+<br/>
+{% endfor %}
